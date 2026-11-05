@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-cream text-gray-800 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-pastel-pink-400 to-pastel-pink-500 text-white px-6 py-3 rounded-full font-medium
+    hover:from-pastel-pink-500 hover:to-pastel-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl
+    transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-pastel-pink-500 px-6 py-3 rounded-full font-medium border-2 border-pastel-pink-300
+    hover:bg-pastel-pink-50 transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-baby-blue-400 text-baby-blue-600 px-6 py-3 rounded-full font-medium
+    hover:bg-baby-blue-50 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-pastel-pink-400 
+    focus:ring-2 focus:ring-pastel-pink-100 outline-none transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-pastel-pink-500 to-baby-blue-500 bg-clip-text text-transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f48a9a, #7dd3fc);
+  border-radius: 10px;
+}
+
+/* Toast customization */
+.Toastify__toast {
+  border-radius: 12px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
