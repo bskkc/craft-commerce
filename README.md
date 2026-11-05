@@ -4,7 +4,6 @@ El yapımı ürünler (kavanoz, çerçeve, mum, dekorasyon vb.) için hazırlanm
 
 ## ✨ Özellikler
 
-- 🛍️ Modern ve şık tasarım (Pudra pembe & Bebek mavisi tema)
 - 🔐 JWT tabanlı kullanıcı kimlik doğrulama
 - 💳 iyzico ile güvenli ödeme
 - 📦 Sipariş takip sistemi
@@ -183,11 +182,10 @@ Bu komut:
 iyzico 3D Secure entegrasyonu kullanılmaktadır.
 
 1. Sandbox ortamında test için: https://sandbox-merchant.iyzipay.com
-2. Test kartları için iyzico dökümanlarına bakın
 
 ## 🔐 Admin Hesabı
 
-Seed ile ilk admin hesabını oluşturmak için `.env` dosyasında `SEED_ADMIN_EMAIL` ve en az 16 karakterli benzersiz `SEED_ADMIN_PASSWORD` değerlerini ayarlayın. `/api/auth/create-admin` endpoint'i yalnızca en az 32 karakterli `ADMIN_SETUP_SECRET` ayarlandığında etkinleşir; bu değeri kimseyle paylaşmayın.
+Seed ile ilk admin hesabını oluşturmak için `.env` dosyasında `SEED_ADMIN_EMAIL` ve en az 16 karakterli benzersiz `SEED_ADMIN_PASSWORD` değerlerini ayarlayın. `/api/auth/create-admin` endpoint'i yalnızca en az 32 karakterli `ADMIN_SETUP_SECRET` ayarlandığında etkinleşir.
 
 ## 📝 API Endpoints
 
@@ -218,7 +216,3 @@ Seed ile ilk admin hesabını oluşturmak için `.env` dosyasında `SEED_ADMIN_E
 ### Payments
 - `POST /api/payments/initialize` - Ödeme başlat
 - `POST /api/payments/callback` - Ödeme callback
-
-## 📄 Lisans
-
-MIT
